@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayank Manjhi | AI/ML Engineer</title>
+<meta name="description" content="Mayank Manjhi — AI/ML Engineer focused on Generative AI, LLMs, RAG, Agentic AI, MLOps, computer vision and deployment.">
+<style>
+:root{
+  --navy:#081a33; --navy2:#0d2748; --orange:#ff8a3d; --orange2:#ffc08a;
+  --ink:#172238; --muted:#5c6a7d; --line:#dce4ed; --bg:#f7f9fc; --white:#fff;
+  --max:1180px; --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit}
+.container{width:min(var(--max),92%);margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(8,26,51,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#fff;text-decoration:none;font-weight:800;letter-spacing:.4px}
+.logo span{color:var(--orange)}
+.nav-links{display:flex;gap:24px}
+.nav-links a{color:#dce7f5;text-decoration:none;font-size:14px;font-weight:600}
+.nav-links a:hover{color:var(--orange2)}
+.hero{background:linear-gradient(135deg,var(--navy),#102f55);color:#fff;padding:88px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:50px;align-items:center}
+.eyebrow{color:var(--orange2);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.03;margin:12px 0 18px;letter-spacing:-2.5px}
+.hero h1 span{color:var(--orange)}
+.hero-lead{font-size:20px;line-height:1.55;color:#dce7f5;max-width:760px;margin:0 0 28px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:10px;text-decoration:none;font-weight:800;font-size:14px;border:1px solid transparent}
+.btn-primary{background:var(--orange);color:#201307}
+.btn-secondary{border-color:#7890ad;color:#fff}
+.hero-card{border:1px solid #426180;background:rgba(255,255,255,.05);border-radius:var(--radius);padding:25px}
+.hero-card strong{display:block;font-size:34px;color:#fff}
+.hero-card p{margin:2px 0 18px;color:#bdcde0;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:25px}
+.stat{background:#fff;border-radius:14px;padding:16px;color:var(--ink)}
+.stat strong{font-size:25px;color:var(--navy)}
+.stat span{display:block;color:var(--muted);font-size:12px;font-weight:700}
+section{padding:72px 0}
+.section-head{margin-bottom:30px}
+.kicker{color:#c45d18;font-weight:800;letter-spacing:1.5px;font-size:12px;text-transform:uppercase}
+h2{font-size:38px;line-height:1.15;margin:7px 0 10px;letter-spacing:-1px}
+.section-intro{color:var(--muted);max-width:780px;margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.card h3{margin:0 0 10px;font-size:20px}
+.card p{margin:0;color:var(--muted)}
+.tag-wrap{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.tag{background:#eef3f8;border:1px solid #d7e0ea;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:750}
+.projects{display:grid;gap:22px}
+.project{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:grid;grid-template-columns:1fr 1.7fr}
+.project-media{background:var(--navy);min-height:280px;display:flex;align-items:center;justify-content:center;padding:22px}
+.project-media img{width:100%;height:100%;max-height:320px;object-fit:contain;border-radius:12px}
+.project-placeholder{width:100%;min-height:235px;border:1px solid #3f5d7d;border-radius:12px;display:flex;align-items:center;justify-content:center;text-align:center;color:#b9c7d8;padding:25px;font-weight:800}
+.project-body{padding:27px}
+.project-top{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
+.project h3{margin:0;font-size:25px;line-height:1.2}
+.project-number{color:#c45d18;font-weight:900;font-size:12px;white-space:nowrap}
+.project p{color:var(--muted);margin:12px 0 16px}
+.project-tech{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 18px}
+.project-tech span{font-size:11px;font-weight:800;background:#f0f4f8;border:1px solid #dce4ed;padding:5px 8px;border-radius:7px}
+.evidence{border-left:3px solid var(--orange);background:#fff8f2;padding:12px 14px;margin:15px 0;color:#3d4653;font-size:13px}
+.evidence strong{color:#8e430f}
+.project-links{display:flex;flex-wrap:wrap;gap:9px}
+.link{display:inline-flex;text-decoration:none;font-size:12px;font-weight:850;border:1px solid #cfd9e4;padding:8px 11px;border-radius:8px}
+.link.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.skill{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px}
+.skill b{display:block;margin-bottom:5px}
+.skill span{color:var(--muted);font-size:14px}
+.timeline{display:grid;gap:16px}
+.role{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px}
+.role-head{display:flex;justify-content:space-between;gap:20px}
+.role h3{margin:0 0 4px}
+.company{font-weight:800;color:#c45d18}
+.date{font-size:13px;font-weight:800;color:var(--muted);white-space:nowrap}
+.role ul{margin:13px 0 0 19px;color:var(--muted)}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact{background:var(--navy);color:#fff}
+.contact .section-intro{color:#c6d5e6}
+.contact-box{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.contact-box a{background:#fff;color:var(--navy);padding:11px 15px;border-radius:9px;text-decoration:none;font-weight:800;font-size:13px}
+footer{background:#061426;color:#91a5bc;padding:25px 0;font-size:13px}
+footer .container{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){
+  .nav-links{display:none}
+  .hero-grid,.about-grid,.project,.skills-grid,.edu{grid-template-columns:1fr}
+  .project-media{min-height:230px}
+  .role-head{flex-direction:column;gap:4px}
+  h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#top">Mayank<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a>
+      <a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">AI / ML Engineer</div>
+      <h1>Building with <span>LLMs</span>, Agents & ML Systems.</h1>
+      <p class="hero-lead">
+        Python-first AI/ML engineer working across Generative AI, LLM fine-tuning,
+        RAG, Agentic AI, computer vision and MLOps — from model development to deployed APIs.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-secondary" href="https://github.com/mayank1271" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="eyebrow">Recruiter Snapshot</div>
+      <strong>AI/ML + GenAI</strong>
+      <p>Hands-on portfolio spanning models, LLM applications, APIs, cloud deployment and automation.</p>
+      <div class="stats">
+        <div class="stat"><strong>08</strong><span>Projects</span></div>
+        <div class="stat"><strong>02</strong><span>Work Experiences</span></div>
+        <div class="stat"><strong>AWS</strong><span>EC2 Deployment</span></div>
+        <div class="stat"><strong>CI/CD</strong><span>GitHub Actions</span></div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker">01 — Profile</div><h2>What I Work On</h2>
+      <p class="section-intro">I build practical AI systems that connect machine-learning models with retrieval, agents, APIs and cloud infrastructure.</p>
+    </div>
+    <div class="about-grid">
+      <div class="card">
+        <h3>AI / ML Engineering</h3>
+        <p>Model development, deep learning, fine-tuning, evaluation, computer vision and data-driven experimentation using Python.</p>
+        <div class="tag-wrap">
+          <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span>
+          <span class="tag">Scikit-learn</span><span class="tag">YOLOv11</span><span class="tag">Model Evaluation</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Generative AI & Production</h3>
+        <p>LLM applications using RAG, LoRA/PEFT, prompt engineering and agent workflows, exposed through APIs and deployed infrastructure.</p>
+        <div class="tag-wrap">
+          <span class="tag">LLMs</span><span class="tag">LoRA / PEFT</span><span class="tag">RAG</span>
+          <span class="tag">LangGraph</span><span class="tag">FastAPI</span><span class="tag">Docker</span>
+          <span class="tag">AWS EC2</span><span class="tag">MLflow</span><span class="tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head"><div class="kicker">02 — Selected Work</div><h2>Projects</h2>
+      <p class="section-intro">Every project below shows the problem, technical implementation, stack and available proof — without requiring hover interactions.</p>
+    </div>
+
+    <div class="projects">
+
+      <article class="project">
+        <div class="project-media"><img src="assets/animehub-demo.png" alt="AnimeHub TinyLlama chatbot"></div>
+        <div class="project-body">
+          <div class="project-top"><h3>AnimeHub — Fine-Tuned LLM Chatbot</h3><span class="project-number">01</span></div>
+          <p>Fine-tuned TinyLlama-1.1B for an anime-domain Q&A chatbot using LoRA, then exposed the model through an interactive application and cloud deployment workflow.</p>
+          <div class="project-tech"><span>TinyLlama-1.1B</span><span>LoRA</span><span>PyTorch</span><span>Transformers</span><span>FastAPI</span><span>Gradio</span><span>Hugging Face</span><span>AWS EC2</span></div>
+          <div class="evidence"><strong>Deployment evidence:</strong> AWS EC2 instance named <b>animehub</b> (t3.xlarge) was used for the deployment setup. AWS proof is linked below.</div>
+          <div class="project-links">
+            <a class="link primary" href="https://youtu.be/I5ISD18Np40" target="_blank" rel="noopener">▶ Watch Demo</a>
+            <a class="link" href="https://huggingface.co/spaces/mayank7122/anime_again" target="_blank" rel="noopener">Live HF Space</a>
+            <a class="link" href="https://huggingface.co/mayank7122/animehub-merged" target="_blank" rel="noopener">Model</a>
+            <a class="link" href="https://github.com/mayank1271" target="_blank" rel="noopener">GitHub</a>
+            <a class="link" href="assets/animehub-aws-ec2-proof.png" target="_blank" rel="noopener">AWS EC2 Proof ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">MLOps Pipeline<br>Train → MLflow → Docker → FastAPI → AWS → CI/CD</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Network Security MLOps</h3><span class="project-number">02</span></div>
+          <p>End-to-end malicious-website classification pipeline covering training, experiment tracking, API serving, containerization, AWS deployment and automated CI/CD.</p>
+          <div class="project-tech"><span>Python</span><span>Scikit-learn</span><span>MLflow</span><span>FastAPI</span><span>Docker</span><span>AWS EC2</span><span>GitHub Actions</span><span>CI/CD</span></div>
+          <div class="evidence"><strong>CI/CD evidence:</strong> GitHub Actions workflow shows successful Continuous Integration, Continuous Delivery and Continuous Deployment. AWS EC2 infrastructure was also provisioned for the project.</div>
+          <div class="project-links">
+            <a class="link primary" href="https://github.com/mayank1271/network-security-mlops" target="_blank" rel="noopener">View Repository</a>
+            <a class="link" href="https://github.com/mayank1271/network-security-mlops/actions" target="_blank" rel="noopener">CI/CD Workflows</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">Agentic AI<br>LangGraph + LLaMA-3 + CV/OCR + Tools</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Agentic AI Automation</h3><span class="project-number">03</span></div>
+          <p>Multi-step LangGraph workflow using an LLM decision layer with computer-vision/OCR signals and tool-driven actions across the workflow.</p>
+          <div class="project-tech"><span>LangGraph</span><span>LLaMA-3</span><span>Agents</span><span>Python</span><span>OCR</span><span>Computer Vision</span></div>
+          <div class="project-links"><a class="link primary" href="https://github.com/mayank1271/tweet_automation_langraph_agenticai_tools" target="_blank" rel="noopener">View Repository</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">RAG<br>Documents → Embeddings → Retrieval → Grounded Answers</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>RAG Document Q&A System</h3><span class="project-number">04</span></div>
+          <p>Document question-answering workflow that ingests documents, creates embeddings, retrieves relevant context and grounds LLM responses in source material.</p>
+          <div class="project-tech"><span>RAG</span><span>Embeddings</span><span>Vector Search</span><span>LLMs</span><span>Python</span></div>
+          <div class="project-links"><a class="link primary" href="https://github.com/mayank1271/RAG-Retrieval-Augmented-Generation-RAG-Document-QA-System" target="_blank" rel="noopener">View Repository</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">Multimodal AI<br>Invoice Image → LLM → Structured Answers</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Multimodal Invoice LLM</h3><span class="project-number">05</span></div>
+          <p>Multimodal LLM application for reading invoice images and answering structured queries through an interactive Streamlit interface.</p>
+          <div class="project-tech"><span>Multimodal LLM</span><span>Vision</span><span>Streamlit</span><span>Python</span><span>Document AI</span></div>
+          <div class="project-links"><a class="link primary" href="https://github.com/mayank1271/LLM-invoice-extractor" target="_blank" rel="noopener">View Repository</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><img src="assets/dustbin-yolov11-demo.png" alt="YOLOv11 dustbin overflow detection"></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Dustbin Overflow Detection</h3><span class="project-number">06</span></div>
+          <p>Real-time YOLOv11 computer-vision system classifying dustbin status from a live camera stream using OpenCV.</p>
+          <div class="project-tech"><span>YOLOv11</span><span>Ultralytics</span><span>OpenCV</span><span>Python</span><span>Real-time CV</span></div>
+          <div class="project-links">
+            <a class="link primary" href="https://youtu.be/FkyzwySTOHA" target="_blank" rel="noopener">▶ Watch Demo</a>
+            <a class="link" href="https://github.com/mayank1271/dustbin_overflow-detection-using-yolo11" target="_blank" rel="noopener">View Repository</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">Football EDA<br>Distribution + Correlation Analysis</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Football Players EDA</h3><span class="project-number">07</span></div>
+          <p>Exploratory analysis of football-player data using distribution and correlation analysis to investigate patterns in the dataset.</p>
+          <div class="project-tech"><span>Python</span><span>Pandas</span><span>EDA</span><span>Data Analysis</span></div>
+          <div class="project-links"><a class="link" href="https://github.com/mayank1271/Eda-on-football-players" target="_blank" rel="noopener">View Repository</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media"><div class="project-placeholder">Power BI<br>Google Play Dataset + DAX Dashboard</div></div>
+        <div class="project-body">
+          <div class="project-top"><h3>Google Play Power BI Dashboard</h3><span class="project-number">08</span></div>
+          <p>Cleaned the Google Play dataset in Excel and built an interactive Power BI dashboard with DAX measures.</p>
+          <div class="project-tech"><span>Power BI</span><span>DAX</span><span>Excel</span><span>Data Visualization</span></div>
+          <div class="project-links"><a class="link" href="https://github.com/mayank1271/google_play-dataset-visualization-in-power-bi" target="_blank" rel="noopener">View Repository</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head"><div class="kicker">03 — Technical Stack</div><h2>Skills</h2>
+      <p class="section-intro">Grouped for quick recruiter scanning rather than hidden inside icons or hover cards.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill"><b>Programming & Data</b><span>Python, SQL, Pandas, NumPy</span></div>
+      <div class="skill"><b>Machine Learning</b><span>Scikit-learn, regression, classification, model evaluation, hyperparameter tuning</span></div>
+      <div class="skill"><b>Deep Learning</b><span>PyTorch, TensorFlow, Transformers, computer vision, YOLOv11</span></div>
+      <div class="skill"><b>Generative AI</b><span>LLMs, prompt engineering, LoRA/PEFT, Hugging Face, multimodal AI</span></div>
+      <div class="skill"><b>RAG & Agents</b><span>RAG workflows, embeddings, vector retrieval, LangGraph, agentic workflows</span></div>
+      <div class="skill"><b>Deployment & MLOps</b><span>FastAPI, Docker, AWS EC2, MLflow, GitHub Actions, CI/CD</span></div>
+      <div class="skill"><b>Web / App Tools</b><span>Streamlit, Gradio, Uvicorn, REST APIs</span></div>
+      <div class="skill"><b>Automation & CV</b><span>OpenCV, Pytesseract, Selenium, Playwright, AsyncIO</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head"><div class="kicker">04 — Experience</div><h2>Experience</h2></div>
+    <div class="timeline">
+      <article class="role">
+        <div class="role-head">
+          <div><h3>AI/ML Content Creator</h3><div class="company">Cranes Varsity Pvt. Ltd. — Bangalore</div></div>
+          <div class="date">Nov 2025 — Present</div>
+        </div>
+        <ul>
+          <li>Research AI/ML concepts and translate technical topics into structured learning material.</li>
+          <li>Create eBooks, presentations and hands-on content around Python, statistics, probability and data science.</li>
+          <li>Use Copilot-assisted workflows and practical coding examples to develop technical learning resources.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-head">
+          <div><h3>AI/ML Engineer Intern</h3><div class="company">Livnsense — Bangalore</div></div>
+          <div class="date">Apr 2025 — Jul 2025</div>
+        </div>
+        <ul>
+          <li>Worked on applied AI/ML engineering tasks during a three-month internship.</li>
+          <li>Contributed to data, machine-learning and automation workflows using Python and ML tooling.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head"><div class="kicker">05 — Education</div><h2>Education</h2></div>
+    <div class="edu">
+      <div class="card"><h3>B.Tech — Computer Science & Engineering</h3><p>Sagar Institute of Research and Technology & Science, Bhopal</p><p style="margin-top:8px"><b>CGPA: 7.50</b></p></div>
+      <div class="card"><h3>Post Diploma — Data Science with ML</h3><p>Cranes Varsity</p><p style="margin-top:8px">Focus: Python, statistics, machine learning and applied data science.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head"><div class="kicker">06 — Contact</div><h2>Let's Build AI Systems.</h2>
+      <p class="section-intro">For AI/ML engineering, GenAI, LLM, RAG, Agentic AI and MLOps opportunities, reach out through the links below.</p>
+    </div>
+    <div class="contact-box">
+      <a href="https://github.com/mayank1271" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:your-email@example.com">Email ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container"><span>© 2026 Mayank Manjhi</span><span>AI/ML Engineer • GenAI • MLOps</span></div></footer>
+</body>
+</html>
